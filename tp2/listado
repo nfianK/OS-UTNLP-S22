@@ -1,0 +1,116 @@
+    1  clera
+    2  clear
+    4  cd ..
+    6  cd ..
+    8  nano code
+    9  nano code.py
+   10  python code.py 
+   11  sudo apt install python
+   12  sudo apt install python-is-python3
+   13  python code.py 
+   14  nano 
+   15  nano code.py 
+   16  python code.py 
+   18  clear 
+   19  cd /
+   21  cd ..
+   23  sudo apt update
+   24  sudo apt upgrade
+   25  clear
+   26  cd
+   28  cd ..'
+   30  exit
+   31  close
+   32  cd .
+   33  cd ..
+   35  cd fiank/
+   37  cd ..
+   39  cd ..
+   41  cd etc/
+   47  find --help
+   48  cd 
+   50  mkdir practicas
+   52  mdkir practicas/tp1 
+   53  mkdir practicas/tp1
+   55  cd practicas/tp1/
+   56  touch perfil.txt
+   58  clear
+   59  cp --help
+   60  cp /etc/passwd usuarios
+   61  cd u
+   63  cat usuarios 
+   64  cp /etc/group grupos
+   67  ssh bandit0@bandit.labs.overthewire.org -p 2220
+   68  ssh bandit1@bandit.labs.overthewire.org -p 2220
+   69  ssh bandit2@bandit.labs.overthewire.org -p 2220
+   71  ssh bandit3@bandit.labs.overthewire.org -p 2220
+   72  ssh bandit4@bandit.labs.overthewire.org -p 2220
+   74  mkdir OTW
+   76  cd OTW/
+   77  touch bandit.txt
+   78  echo "bandit4 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ" >> bandit.txt 
+   79  cat bandit.txt 
+   80  cd ..
+   81  clear
+   83  cd practicas/
+   84  cd tp1/
+   86  cat usuarios 
+   87  man useradd
+   88  sudo useradd -p momingo -c "Aguante la UTN (?" admin
+   89  man moduser
+   90  man usermod
+   91  usermod -g admin admin
+   92  cat etc/passwd
+   93  cat /etc/passwd
+   94  sudo useradd -p momingo -c "Aguante la UTN (?" -g admin admin
+   95  cat /etc/passwd
+   96  useradd -p agua pepe
+   97  sudo useradd -p agua pepe
+   98  cat /etc/passwd
+   99  usedmod -c Ich bin Pepe pepe
+  100  usermod -c "Ich bin Pepe" pepe
+  101  sudo usermod -c "Ich binpepe" pepe
+  102  cat /etc/passwd
+  103  sudo tail /var/log/syslog 
+  104  clear
+  105  head usuarios 
+  106  man head
+  107  head -n 2 usuarios 
+  108  tail -n 4 grupos 
+  109  cat /etc/fstab >> filesystem.txt
+  110  cat filesystem.txt 
+  111  nano filesystem.txt 
+  112  awk -F: '/\/home/ {printf "%s:%s\n",$1,$3}' /etc/passwd
+  113  cd ..
+  114  cd
+  115  cd ..
+  117  cd ..
+  119  cd home/
+  120  cat /etc/passwd
+  121  clear
+  124  clera
+  125  clear
+  127  cd OTW/
+  129  cat bandit.txt 
+  130  ssh leviathan0@leviathan.labs.overthewire.org -p 2223
+  131  head 2 usuarios
+  133  cd practicas/tp1/
+  135  head --help
+  136  head -n 2
+  138  head -n 2 usuarios
+  139  tail -n 4 grupos
+  140  cat /etc/fstab 
+  141  cat /etc/fstab | >> filesystem.txt
+  143  cat filesystem.txt 
+  144  history
+  145  wc --help
+  146  cat -l filesystem.txt 
+  147  cat --lines filesystem.txt 
+  148  cat --help
+  149  wc -l filesystem.txt 
+  150  wc -c filesystem.txt 
+  151  wc -l filesystem.txt >> cantidad
+  152  wc -c filesystem.txt >> cantidad
+  153  wc -w filesystem.txt >> cantidad
+  154  cat cantidad 
+  155  history >> cmd.txt
