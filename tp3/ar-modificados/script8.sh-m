@@ -1,8 +1,4 @@
 #!/bin/bash
-
-if [ -z $1 -o ! -d $1 ]; then
-	echo "El parametro debe ser un directorio y existir"
-	exit 1
 fi
 
 direc=0

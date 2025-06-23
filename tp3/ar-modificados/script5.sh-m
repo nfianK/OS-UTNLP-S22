@@ -1,8 +1,4 @@
 #!/bin/bash
-
-
-if [ ! -d $1 ]; then 
-	echo "El parametro debe ser un directorio"
 	exit 1
 fi
 

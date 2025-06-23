@@ -1,0 +1,9 @@
+#!/bin/bash
+
+find $path -name "script*" -exec chmod g+w {} \;
+
+
+
+
+
+

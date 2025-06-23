@@ -1,8 +1,4 @@
 #!/bin/bash
-
- 
-while true; do 
-	echo "Elija una opcion:
 	1 - Borrar un fichero 
 	2 - Visualizar un fichero
 	3 - Copiar un archivo 

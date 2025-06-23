@@ -1,0 +1,118 @@
+#!/bin/sh
+
+sudo cp /etc/passwd usuarios
+sudo cp /etc/group grupos
+
+cat usuarios | cut -d":" -f3,4,7 > perfil.txt
+#!/bin/sh
+
+archivo1=$(wc -l $1 | tr -d $1)
+archivo2=$(wc -l $2 | tr -d $2)
+
+#echo $(( $archivo1 + $archivo2 ))
+
+if [[ $archivo1 -eq $archivo2 ]];
+then
+	echo "Tienen la misma cantidad de lineas"
+else
+	if [[ $archivo1 -lt $archivo2 ]];
+	then
+		echo "El archivo 2 tiene mas lineas"
+	else
+		echo "El archivo 1 tiene mas lineas"
+	fi
+fi
+#!/bin/sh
+
+archivo1=$(wc -l script1.sh | tr -d 'script1.sh')
+archivo2=$(wc -l script2.sh | tr -d 'script2.sh')
+
+#echo $(( $archivo1 + $archivo2 ))
+
+if [[ $archivo1 -eq $archivo2 ]];
+then
+	echo "Tienen la misma cantidad de lineas"
+else
+	if [[ $archivo1 -lt $archivo2 ]];
+	then
+		echo "El archivo 2 tiene mas lineas"
+	else
+		echo "El archivo 1 tiene mas lineas"
+	fi
+fi
+#!/bin/sh
+
+echo "Estoy aprendiendo lenguaje scripting"
+#!/bin/sh
+
+while IFS= read -r line; do
+	echo "${line}"
+done < /etc/passwd
+#!/bin/sh
+
+find ~/practicas/tp1 -name *.txt | xargs chmod a+r 
+#!/bin/sh
+
+
+##SOLUCION 1 SIN ESTRUCTURAS REPETITIVAS
+#archivos=$(find . -maxdepth 1 -type f | wc -l)
+#directorios=$(find . -maxdepth 2 -type d | wc -l)
+
+
+##SOLUCION 2
+
+#archivos=0
+#directiorios=0
+
+#while IFS= read -r line; do
+#	((archivos++))
+#done < <(find . -maxdepth 1 -type f)
+#
+#while IFS= read -r line; do
+#	((directorios++))
+#done < <(find . -maxdepth 1 -type d)
+#
+
+
+
+
+
+
+
+
+echo "La cantidad de archivos en la carpeta es ${archivos} y la cantidad de directorios $(($directorios - 1))"
+
+
+
+#!/bin/sh
+
+sudo chmod a+w usuarios
+echo "${1}:x:uid:guid: :/home/usu01:/bin/bash" >> usuarios
+#!/bin/sh
+
+if [ ! -d "./nuevo" ];
+then
+	mkdir nuevo
+else
+	rm -r nuevo
+	mkdir nuevo
+fi
+
+unzip ../tp1.tar -d ./nuevo
+cat ./nuevo/tp1/hist.txt | grep -v ls > listado
+tar -czf listado.tar listado
+#!/bin/sh
+
+#Limpiar Pantalla
+clear
+
+#Ejecutar comando df
+
+#df -h / Commando base
+#Commando con modificaciones de texto
+espacio=$(df -h / | tr -s ' ' | tail -1 | cut -d" " -f4)
+
+#Buscar en la salida del comando anterior el espacio disponible en el
+#sistema de archivos raíz - Mostrar un mensaje
+
+echo "El espacio disponible en el sistema de archivos raiz es: ${espacio}"

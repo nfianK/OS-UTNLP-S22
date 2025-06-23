@@ -1,0 +1,5 @@
+#!/bin/bash
+echo HOSTNAME=$HOSTNAME > var-set
+echo HOME=$HOME >> var-set
+echo LOGNAME=$LOGNAME >> var-set
+echo PATH=$PATH >> var-set

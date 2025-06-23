@@ -1,8 +1,13 @@
 #!/bin/bash
 
+path=/home/fiank/OS-UTNLP-S22/tp2
 
-path=~/OS-UTNLP-S22/tp2
+find $path -name "script*" -exec chmod o+x {} \;
 
-chmod o+x $path/*.sh
-chmod g+w $path/*.sh
+find $path -name "script*" -exec chmod g+w {} \;
+
+
+
+
+
 
